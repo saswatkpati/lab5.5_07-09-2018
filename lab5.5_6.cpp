@@ -1,23 +1,26 @@
 //include the library
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-//include the function
-	int main()
+//mention the function
+int main()
+{	
+	int size ;
+	cout << "Please input your desired side length for mirrored rhombus star pattern:" << endl; 
+	//read the input value
+	cin >> size;
+	for(int i = 0; i < size ; i ++)
 	{
-	int n = 5, j, i;
-	for(int i = 0; i < 5 ; i ++)
-	 {
-           //looping structure to print spaces
-           for (int j=0; j < i; j++)
-	   {
-            cout << " ";
-           }
-	   //print 5 stars
-	   {
-            cout << "*****" << endl;
-	   }
-          }
-	 cout << " This is Mirrored Rhombus Star Pattern." << endl;
-	return 0;         
-} 
+		for (int j=0; j < i ; j++)
+		{	
+			cout << "  " ;
+		}
+		for (int k= 0 ; k < size ; k++)
+		{
+			cout << "* " ;
+		}		
+	cout << endl;
+	}
+//end the program
+return 0;
+}
